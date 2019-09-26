@@ -1,5 +1,3 @@
-##The process
-
 #From another repo as homework I described this game as such:
 
 *"Katamari/Kirby Air Ride Shmup: Katamari is a game about an alien that rolls objects up with a katamari or sticky ball thing, and the main goal of the game is to get to a specific circumfrence from accumulating enough objects in a certain amount of time. The twist on this classic game series for my shmup idea is that now the player has to avoid non roll-upable items while roll up specific objects for the katamari for one half of the level. The next half of the level is to use the kind of katamari that the player rolled up as ammo to now shoot down what was attacking the player before. Rolling up certain objects can give the player certain power ups, almost like Kirby Air Ride where you have to accumulate power ups for your vehicle and then battle against your friends in the next half of the level."*
