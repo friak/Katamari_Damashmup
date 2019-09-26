@@ -26,3 +26,5 @@
 ## And now we're here
 
 *Katamari DamaShmup*
+
+A fan-made alternative katamari game where there a two phases to each level---a katamari building phase to optimize the best weapon against your opponent, and a combat phase where you put your katamari to use by bouncing it off the bullet-storm spewing boss!
