@@ -23,7 +23,11 @@
 
 *Narrative tidbit: "Katamari Damashmup is the fan-based alternate universe in Katamari Damacy where in the future the King of the Cosmos (your father! Gasp!) turns on you as you rise against him and his tyrannical rule to take his crown and restore peace to the Cosmos! But be wary young prince, as he has many goons (your cousins! Gasper!) on his side to stop you..."*
 
-## And now we're here
+## And now, time to look at repos!
+
+I'm using the shmup template dicribed in IGDPAD, Chapters 30 along with a Katamari unity clone by UnderGear (https://github.com/UnderGear/Klonamari) to begin the actualizing process of the game. I'm going to start by tweaking the enemies as collectable items that get attached to the katamari, and then I'm going to think about wanting to change the movement of the game to something more resembling of the Katamari games or staying in this shmup design. I'm then going to get to a boss in a different scene that spews bullet storms. Lastly, I'm gonna also work on using the katamari weapon a more boomerang type of weapon with aiming (mouse aiming). Lastly, I'm going to work with the two phases of the level, carrying static classes(?) across scenes.
+
+## The Basic Idea
 
 *Katamari DamaShmup*
 
