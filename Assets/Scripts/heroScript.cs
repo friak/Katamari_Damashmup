@@ -11,10 +11,10 @@ public class heroScript : MonoBehaviour {
 	public float                        rollMult = -45f;
 	public float                        pitchMult = 30f;
 	public float                        gameRestartDelay = 2f;
-	public GameObject                   projectilePrefab;
-	public float                        projectileSpeed = 40f;
+	public GameObject                   Katamari;
+	public float                        projectileSpeed = 50f;
 
-	[Header("Set Dynmaically")]
+    [Header("Set Dynmaically")]
     // Make it viasible in the inspector
 	[SerializeField]          
 	private float                       _shieldLevel = 1;
@@ -23,9 +23,8 @@ public class heroScript : MonoBehaviour {
 
 	private GameObject                  lastTriggerGo = null;
 
-
-	// Use this for initialization
-	void Awake () {
+    // Use this for initialization
+    void Awake () {
 		if(S == null){
 			S = this;
 		} else {
@@ -53,8 +52,9 @@ public class heroScript : MonoBehaviour {
 		transform.rotation = Quaternion.Euler(yAxis * pitchMult, xAxis * rollMult, 0);
 
         // Allow the ship to fire
-		if(Input.GetKeyDown(KeyCode.Space)){
-			TempFire();
+		if(Input.GetKeyDown(KeyCode.Space) && (GameObject.FindWithTag("KatamariThrown") != null))
+        {
+			Throw();
 		}
 	}
 
@@ -66,11 +66,13 @@ public class heroScript : MonoBehaviour {
 		}
 	}
 
-	void TempFire(){
-		GameObject projGO = Instantiate<GameObject>(projectilePrefab);
-		projGO.transform.position = transform.position;
-		Rigidbody rb = projGO.GetComponent<Rigidbody>();
-		rb.velocity = Vector3.up * projectileSpeed;
+    void Throw()
+    {
+        Destroy(this.gameObject);
+        GameObject throwKatamari = Instantiate<GameObject>(Katamari);
+        throwKatamari.transform.position = transform.position;
+        Rigidbody rb = throwKatamari.GetComponent<Rigidbody>();
+        rb.velocity = Vector3.up * projectileSpeed;
 	}
     
 	void OnTriggerEnter(Collider other){
