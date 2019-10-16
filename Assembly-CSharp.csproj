@@ -62,19 +62,21 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\atk.cs" />
+    <Compile Include="Assets\Scripts\barFollow.cs" />
     <Compile Include="Assets\Scripts\boundCheck.cs" />
+    <Compile Include="Assets\Scripts\cameraFollow.cs" />
+    <Compile Include="Assets\Scripts\enemy_Health.cs" />
     <Compile Include="Assets\Scripts\enemyScript.cs" />
     <Compile Include="Assets\Scripts\gameManager.cs" />
-    <Compile Include="Assets\Scripts\heroScript.cs" />
+    <Compile Include="Assets\Scripts\hero_Health.cs" />
+    <Compile Include="Assets\Scripts\music.cs" />
+    <Compile Include="Assets\Scripts\playerScript.cs" />
     <Compile Include="Assets\Scripts\projectileScript.cs" />
-    <Compile Include="Assets\Scripts\shieldScript.cs" />
+    <Compile Include="Assets\Scripts\rotatePoint.cs" />
+    <Compile Include="Assets\Scripts\start.cs" />
+    <Compile Include="Assets\timer.cs" />
     <None Include="Assets\Materials\UnlitAlpha.shader" />
-    <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>C:/Users/FRiaK/Documents/GitHub/Katamari_Damashmup/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.TextMeshPro">
-      <HintPath>C:/Users/FRiaK/Documents/GitHub/Katamari_Damashmup/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/FRiaK/Documents/GitHub/Katamari_Damashmup/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
@@ -83,6 +85,9 @@
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
       <HintPath>C:/Users/FRiaK/Documents/GitHub/Katamari_Damashmup/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro.Editor">
+      <HintPath>C:/Users/FRiaK/Documents/GitHub/Katamari_Damashmup/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>C:/Users/FRiaK/Documents/GitHub/Katamari_Damashmup/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
@@ -113,6 +118,9 @@
     </Reference>
     <Reference Include="UnityEngine.SpatialTracking">
       <HintPath>C:/Users/FRiaK/Documents/GitHub/Katamari_Damashmup/Library/ScriptAssemblies/UnityEngine.SpatialTracking.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>C:/Users/FRiaK/Documents/GitHub/Katamari_Damashmup/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.DataPrivacy">
       <HintPath>C:/Users/FRiaK/Documents/GitHub/Katamari_Damashmup/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>

@@ -10,15 +10,15 @@ public class boundCheck : MonoBehaviour {
 
 	[Header("Set Dynamically")]
 	public bool                         isOnScreen = true;
-	public float                        camWidth, camHeight;
+	public float                        stageWidth, stageHeight;
     
     [HideInInspector]
 	public bool                         offRight, offLeft, offUp, offDown;
 
 	// Use this for initialization
-	void Awake () {
-		camHeight = Camera.main.orthographicSize;
-        camWidth = camHeight * Camera.main.aspect;
+	void Update () {
+//		stageHeight = 32f;
+  //      stageWidth = 51f;
 	}
 
 	private void LateUpdate(){
@@ -26,26 +26,26 @@ public class boundCheck : MonoBehaviour {
 		isOnScreen = true;
 		offRight = offLeft = offUp = offDown = false;
 
-        if(finalPos.x > camWidth - radius){
-            finalPos.x = camWidth - radius;
+        if(finalPos.x > stageWidth - radius){
+            finalPos.x = stageWidth - radius;
 			isOnScreen = false;
 			offRight = true;
         }
 
-		if(finalPos.x < -camWidth + radius){
-            finalPos.x = -camWidth + radius;
+		if(finalPos.x < -stageWidth + radius){
+            finalPos.x = -stageWidth + radius;
             isOnScreen = false;
 			offLeft = true;
         }
         
-		if(finalPos.y > camHeight - radius){
-            finalPos.y = camHeight - radius;
+		if(finalPos.y > stageHeight - radius){
+            finalPos.y = stageHeight - radius;
             isOnScreen = false;
 			offUp = true;
         }
 
-		if(finalPos.y < -camHeight + radius){
-            finalPos.y = -camHeight + radius;
+		if(finalPos.y < -stageHeight + radius){
+            finalPos.y = -stageHeight + radius;
             isOnScreen = false;
 			offDown = true;
         }
