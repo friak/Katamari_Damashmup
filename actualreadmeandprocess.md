@@ -11,8 +11,6 @@
 
 *The Objective and Basic Mechanics- To complete each level, the player has to collect and roll up a strategic plethora of powerups and items to then utilize their katamari as "ammo" that is used to defeat the boss of each level. This is done by throwing it at them and having it bounce back to the player. This is done all while trying to avoid bullet storms and items that can negatively affect your katamari ammo.*
 
-*Main mechnanics include using both joysticks to manuever the katamari and self, camera controls, and pressing an attack button.*
-
 *The Rules and Conflict- The level starts with a "collecting phase" where you roll up items around you in a set time span. You need to be strategic with how much you roll up because if your katamari is too big, you can't dodge the bullets as effectively; roll too small, you'll have a weak katamari with no powerups.*
 
 *The powerups and items work in that there's some silly logic to them, and it's all about being creative; Say one of the bosses is a giant baby type, well babies hate scary things and vegetables (I don't know, I have cats not kids) so in the collecting phase you'd want to roll up spiders and brocolli! Or if the boss is a big wig banker, roll up the hippies and revolutionists! Keep in mind this phase of the game looks like a tradition katamari level where there's plenty of weird things to roll up in the environment.*
@@ -32,3 +30,10 @@ I'm using the shmup template dicribed in IGDPAD, Chapters 30 along with a Katama
 *Katamari DamaShmup*
 
 A fan-made alternative katamari game where there a two phases to each level---a katamari building phase to optimize the best weapon against your opponent, and a combat phase where you put your katamari to use by bouncing it off the bullet-storm spewing boss!
+
+
+## THE PROCESS PART 2
+
+The new iterations of the game includes only having one phase; however, the element of Katamari is still presented through the anti-collecting element of the battle phese. The items the enemy drops can hurt your katamari and decreases your damage, if it gets too low, you will lose. I also ended up not using UnderGear's Klonamari elements, but may look back for future iterations after the class.
+
+
