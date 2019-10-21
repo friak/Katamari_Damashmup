@@ -4,13 +4,8 @@ using System.Collections;
 public class barFollow : MonoBehaviour
 {
     public float speed = 30f;
-    private Transform target;
+    public Transform target;
 
-
-    void Start()
-    {
-        target = GameObject.FindGameObjectWithTag("BarPoint").GetComponent<Transform>();
-    }
 
     void Update()
     {

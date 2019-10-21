@@ -4,22 +4,14 @@ using UnityEngine;
 
 public class boundCheck : MonoBehaviour {
 
-	[Header("Set in Unity Insepctor")]
 	public bool                         keepOnScreen = true;
 	public float                        radius = 1f;
-
-	[Header("Set Dynamically")]
 	public bool                         isOnScreen = true;
 	public float                        stageWidth, stageHeight;
     
     [HideInInspector]
 	public bool                         offRight, offLeft, offUp, offDown;
 
-	// Use this for initialization
-	void Update () {
-//		stageHeight = 32f;
-  //      stageWidth = 51f;
-	}
 
 	private void LateUpdate(){
         Vector3 finalPos = transform.position;

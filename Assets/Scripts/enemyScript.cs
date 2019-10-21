@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class enemyScript : MonoBehaviour
 {
@@ -19,8 +20,7 @@ public class enemyScript : MonoBehaviour
     public float timeOut1 = 0f;
     public float timeOut2 = 0f;
 
-    public float vunPeriod1 = 0f;
-    public float vunPeriod2 = 0f;
+    public float vunPeriod = 0f;
 
     public GameObject atk1Sound;
     public GameObject atk2Sound;
@@ -29,8 +29,12 @@ public class enemyScript : MonoBehaviour
 
 
     public GameObject atk1;
-    public GameObject atk2;
+    public GameObject[] atk2;
     public GameObject prince_hp;
+    public GameObject kat_dp;
+
+    public GameObject text;
+    public bool textseen;
 
     public Sprite king_shield;
     public Sprite king;
@@ -51,11 +55,14 @@ public class enemyScript : MonoBehaviour
         boxCollider = GetComponent<BoxCollider2D>();
         rb2D = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
+
+        text.GetComponent<GameObject>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        text.SetActive(false);
 
         if (Vector2.Distance(transform.position, target.position) > stop)
         {
@@ -68,7 +75,7 @@ public class enemyScript : MonoBehaviour
         }
        else
         {
-            timeOut1 = 17f;
+            timeOut1 = 12f;
             frameState = "attack1";
             }
 
@@ -78,7 +85,7 @@ public class enemyScript : MonoBehaviour
         }
         else
         {
-            timeOut2 = 27f;
+            timeOut2 = 5f;
             frameState = "attack2";
         }
 
@@ -96,36 +103,32 @@ public class enemyScript : MonoBehaviour
         }
         if (frameState == "attack2")
         {
-            frameState = "vunerable";
-            GameObject atk11 = Instantiate(atk2, shotPoint.position, shotPoint.rotation);
-            GameObject atk22 = Instantiate(atk2, shotPoint.position, shotPoint.rotation);
-            GameObject atk3 = Instantiate(atk2, shotPoint.position, shotPoint.rotation);
-            GameObject atk4 = Instantiate(atk2, shotPoint.position, shotPoint.rotation);
-            atk1.GetComponent<atk>().prince_hp = prince_hp;
-            atk22.GetComponent<atk>().prince_hp = prince_hp;
-            atk3.GetComponent<atk>().prince_hp = prince_hp;
-            atk4.GetComponent<atk>().prince_hp = prince_hp;
             Instantiate(atk2Sound, transform.position, Quaternion.identity);
-
+            GameObject atk11 = Instantiate(atk2[Random.Range(0, atk2.Length)], shotPoint.position, shotPoint.rotation);
+            atk11.GetComponent<katatk>().kat_dp = kat_dp;
+            frameState = "idle";
         }
 
 
         if (frameState == "vunerable")
         {
 
-            if (vunPeriod1 >= 0)
+            if (vunPeriod >= 0)
             {
                 spriteRenderer.sprite = king;
                 GameObject atk = Instantiate(atk1, shotPoint.position, shotPoint.rotation);
+                text.SetActive(true);
                 atk.GetComponent<atk>().prince_hp = prince_hp;
-                vunPeriod1 -= Time.deltaTime; // shorthand for: timeOut = timeOut - Time.deltaTime
+                vunPeriod -= Time.deltaTime; // shorthand for: timeOut = timeOut - Time.deltaTime
             }
             else
             {
                 frameState = "idle";
-                vunPeriod1 = 3f;
+                text.GetComponent<textactive>().seen = false;
+                vunPeriod = 5f;
                 Debug.Log("vunerable");
             }
+ 
         }
 
     }
@@ -143,16 +146,5 @@ public class enemyScript : MonoBehaviour
         }
         return false;
     }
-
-
-    void OnCollisionEnter(Collision coll)
-        {
-            GameObject otherGO = coll.gameObject;
-            Debug.Log(otherGO.tag);
-            if (otherGO.tag == "Hero")
-            {
-                Destroy(otherGO);
-            }
-        }
 }
 

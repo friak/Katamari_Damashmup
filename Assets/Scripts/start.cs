@@ -13,7 +13,7 @@ public class start : MonoBehaviour
     {
 
 
-            if (Input.GetKeyDown(KeyCode.Space))
+            if (Input.GetMouseButtonDown(0))
             {
                 Instantiate(startSound, transform.position, Quaternion.identity);
                 SceneManager.LoadScene("battle_phase");

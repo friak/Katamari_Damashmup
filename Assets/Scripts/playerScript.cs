@@ -18,6 +18,8 @@ public class playerScript : MonoBehaviour
     public Sprite Player_nokat;
     public Transform shotPoint;
 
+    private BoxCollider2D boxCollider;
+    private Rigidbody2D rb2D;
     private SpriteRenderer spriteRenderer;
     private Rigidbody2D rb2d;
 
@@ -26,6 +28,7 @@ public class playerScript : MonoBehaviour
     public GameObject deadSound;
 
     public GameObject king_hp;
+    public GameObject kat_dp;
 
 
 
@@ -124,4 +127,19 @@ public class playerScript : MonoBehaviour
     {
         return true;
     }
+
+    public void OnCollisionEnter2D(Collision2D coll)
+    {
+        Debug.Log("ahhhhh");
+        GameObject otherGO = coll.gameObject;
+        Debug.Log(otherGO.tag);
+        if (otherGO.tag == "Enemy")
+        {
+            Destroy(otherGO);
+            Instantiate(deadSound, transform.position, Quaternion.identity);
+            SceneManager.LoadScene("Game_Over");
+        }
+  
+    }
+
 }

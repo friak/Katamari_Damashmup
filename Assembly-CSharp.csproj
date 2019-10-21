@@ -70,12 +70,15 @@
     <Compile Include="Assets\Scripts\enemyScript.cs" />
     <Compile Include="Assets\Scripts\gameManager.cs" />
     <Compile Include="Assets\Scripts\hero_Health.cs" />
+    <Compile Include="Assets\Scripts\kat_Damage.cs" />
+    <Compile Include="Assets\Scripts\katatk.cs" />
     <Compile Include="Assets\Scripts\music.cs" />
     <Compile Include="Assets\Scripts\playerScript.cs" />
     <Compile Include="Assets\Scripts\projectileScript.cs" />
     <Compile Include="Assets\Scripts\rotatePoint.cs" />
     <Compile Include="Assets\Scripts\start.cs" />
-    <Compile Include="Assets\timer.cs" />
+    <Compile Include="Assets\Scripts\textactive.cs" />
+    <Compile Include="Assets\Scripts\timer.cs" />
     <None Include="Assets\Materials\UnlitAlpha.shader" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/FRiaK/Documents/GitHub/Katamari_Damashmup/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
