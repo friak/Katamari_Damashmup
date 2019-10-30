@@ -11,8 +11,6 @@
 
 *The Objective and Basic Mechanics- To complete each level, the player has to collect and roll up a strategic plethora of powerups and items to then utilize their katamari as "ammo" that is used to defeat the boss of each level. This is done by throwing it at them and having it bounce back to the player. This is done all while trying to avoid bullet storms and items that can negatively affect your katamari ammo.*
 
-*Main mechnanics include using both joysticks to manuever the katamari and self, camera controls, and pressing an attack button.*
-
 *The Rules and Conflict- The level starts with a "collecting phase" where you roll up items around you in a set time span. You need to be strategic with how much you roll up because if your katamari is too big, you can't dodge the bullets as effectively; roll too small, you'll have a weak katamari with no powerups.*
 
 *The powerups and items work in that there's some silly logic to them, and it's all about being creative; Say one of the bosses is a giant baby type, well babies hate scary things and vegetables (I don't know, I have cats not kids) so in the collecting phase you'd want to roll up spiders and brocolli! Or if the boss is a big wig banker, roll up the hippies and revolutionists! Keep in mind this phase of the game looks like a tradition katamari level where there's plenty of weird things to roll up in the environment.*
@@ -32,3 +30,29 @@ I'm using the shmup template dicribed in IGDPAD, Chapters 30 along with a Katama
 *Katamari DamaShmup*
 
 A fan-made alternative katamari game where there a two phases to each level---a katamari building phase to optimize the best weapon against your opponent, and a combat phase where you put your katamari to use by bouncing it off the bullet-storm spewing boss!
+
+# THE Process PART 2 (And after play testing)
+
+## New Motivations/Inspirations
+
+Still Katamari but also now Bullet Hells.
+
+## Design Values
+
+Offensive- To bring in the bombastic spirit of Katamari.
+High-Dificulty- To stay true to the brutality of bullet hells and Katamari's antagonistic feel.
+Anti-Powerups- The inverse idea of collecting in Katamari and powerups in Shmups so that the player is hyper aware of their surroundings (something true to bullet hells and timed katamari levels).
+Limited Weapon- You only have one Katamari, and if you misfire you must wait to have it come back to you.
+
+
+## New Mechanics
+
+*Player vs Game- This is player vs game where the player must go against the game boss and his attacks. Players also must avoid the items (cousins) the boss drops or else their attack stats will go down--losing the game if they go down too far. Lastly, they must be aggressive in attacking as the boss is only vunerable to damage when he attacks himself*
+
+*The second phase from the first iteration is now the full game. The boss runs around the map following the player while spewing bullets that hurt the player's health and dropping items that hurt the Katamari and subsequently decreasing atk stats.
+
+## Conclusions after playtesting
+
+A lot of people enjoyed the difficulty of the game; however there was some confusion in the mechanics that made for some unnecessary difficulty. Most of the confusion was the difference between the player's health and the Katamari's attack stats, so hopefully moving forward more design considerations will go into helping the player understand these mechanics more organically. People were also confused on the subtle physics of the katamari, and what could help is to either get rid of the qwirkier physics or lean into it. Lastly, more attacks by the boss would help vary the gameplay, and doing more for the katamari damaging drops. All in all, I'm quite happy with how this game turned out and loved watching everyone try it out!
+
+
